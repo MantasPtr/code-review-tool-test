@@ -1,0 +1,40 @@
+file: 
+    type:
+    issue_description:
+
+file: fib.py
+    type: performance
+    issue_description: no memoization 
+
+file: correct_types.py 
+    type: typing
+    issue_description: string divided by numbers
+
+func.py 
+
+file: separator.py
+    type: logic 
+    issue_description: incorrect implemetation adds extra space 
+
+file: sql_address.py
+    type: security
+    issue_description: sql injection
+
+file: underscorer.py 
+  - type: logic
+    issue_description: incorrect implemetation adds extra space
+
+file: used.py
+  - type: logic
+    line: 13
+    issue_description: unreachable code - base area always positive
+  - type: smell
+    line 22
+    issue_description: unreachable code - after return
+  - type: smell
+    line 28
+    issue_description: unused variable
+
+file: user_input.py
+  - type: typing
+    issue_description: sum of strings

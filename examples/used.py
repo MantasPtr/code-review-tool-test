@@ -1,5 +1,4 @@
-from math import pi
-
+PI = 3.141592653589793
 
 def calculate_area(radius):
     # Calculates the area of a circle
@@ -9,7 +8,7 @@ def calculate_area(radius):
 
 def calculate_volume(radius, height):
     # Calculates the volume of a cylinder
-    base_area = pi * radius**2
+    base_area = PI * radius**2
     if base_area < 0:
         return -1
     volume = base_area * height
@@ -18,7 +17,7 @@ def calculate_volume(radius, height):
 
 def calculate_circumference(radius):
     # Calculates the circumference of a circle
-    circumference = 2 * pi * radius
+    circumference = 2 * PI * radius
     return circumference
     print("Circumference of the circle:", circumference)
 
