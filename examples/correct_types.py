@@ -1,2 +1,0 @@
-MAGIC_NUMBER = "42"
-b = MAGIC_NUMBER / 2

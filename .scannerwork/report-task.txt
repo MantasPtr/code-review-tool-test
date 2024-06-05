@@ -2,5 +2,5 @@ projectKey=code-review-tool-test
 serverUrl=http://localhost:9001
 serverVersion=9.9.5.90363
 dashboardUrl=http://localhost:9001/dashboard?id=code-review-tool-test
-ceTaskId=AY86JRzO2Ys8XKkD8oa7
-ceTaskUrl=http://localhost:9001/api/ce/task?id=AY86JRzO2Ys8XKkD8oa7
+ceTaskId=AY-q2QtI2Ys8XKkD8ome
+ceTaskUrl=http://localhost:9001/api/ce/task?id=AY-q2QtI2Ys8XKkD8ome

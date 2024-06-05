@@ -1,0 +1,17 @@
+1. **Issue Description**: The function `fib` uses a recursive approach to calculate the Fibonacci number, which is highly inefficient for larger values of `n` due to excessive recomputation of the same values.
+   
+   **Severity Level**: High
+
+   **Line Number and Content**:
+   ```python
+   5: return fib(n-1) + fib(n-2)
+   ```
+
+2. **Issue Description**: The function lacks input validation to ensure that `n` is a non-negative integer. Passing a negative integer or a non-integer value could lead to unexpected behavior or runtime errors.
+
+   **Severity Level**: Medium
+
+   **Line Number and Content**:
+   ```python
+   1: def fib(n):
+   ```

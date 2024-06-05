@@ -1,0 +1,39 @@
+Testing /Users/mape/code-review-tool-test ...
+
+ ✗ [Medium] Cross-site Scripting (XSS) 
+   Path: examples/sql_address.py, line 22 
+   Info: Unsanitized input from a database flows into the return value of get_address, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [Medium] Debug Mode Enabled 
+   Path: examples/image_read.py, line 20 
+   Info: Running the application in debug mode (debug flag is set to True in run) is a security risk if the application is accessible by untrusted parties.
+
+ ✗ [Medium] Path Traversal 
+   Path: gptscan.py, line 10 
+   Info: Unsanitized input from a command line argument flows into open, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+
+ ✗ [High] Cross-site Scripting (XSS) 
+   Path: examples/todos.py, line 28 
+   Info: Unsanitized input from a web form flows into the return value of index, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [High] SQL Injection 
+   Path: examples/sql_address.py, line 15 
+   Info: Unsanitized input from an HTTP parameter flows into execute, where it is used in an SQL query. This may result in an SQL Injection vulnerability.
+
+ ✗ [High] Path Traversal 
+   Path: examples/image_read.py, line 13 
+   Info: Unsanitized input from an HTTP parameter flows into flask.send_file, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+
+
+✔ Test completed
+
+Organization:      117af860-1cd2-4736-a1d2-dbd26c1a246c
+Test type:         Static code analysis
+Project path:      /Users/mape/code-review-tool-test
+
+Summary:
+
+  6 Code issues found
+  3 [High]   3 [Medium] 
+
+

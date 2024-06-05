@@ -17,7 +17,7 @@ install-mypy:
 
 
 pylint:
-	pylint examples/
+	pylint examples/ 
 
 install-pylint:
 	pip install pylint
@@ -28,3 +28,10 @@ flake8:
 
 install-flake8:
 	pip install flake8
+
+snyk:
+	snyk code test --org=${SNYK_ORG}
+
+install-snyk:
+	brew tap snyk/tap
+	brew install snyk

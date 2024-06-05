@@ -1,0 +1,19 @@
+1. **Issue: Division by Zero**
+   - **Severity Level**: High
+   - **Line Number and Content**: Line 3: `return (c * b)/a`
+   - **Description**: The function does not handle the case where `a` is zero. If `a` is zero, the division `(c * b)/a` will raise a `ZeroDivisionError`, causing the program to crash.
+
+2. **Issue: Function Naming**
+   - **Severity Level**: Low
+   - **Line Number and Content**: Line 1: `def xyz(a, b):`
+   - **Description**: The function name `xyz` is not descriptive of its purpose. It is a good practice to use meaningful names for functions to improve code readability and maintainability.
+
+3. **Issue: Lack of Input Validation**
+   - **Severity Level**: Medium
+   - **Line Number and Content**: Line 1: `def xyz(a, b):`
+   - **Description**: The function does not validate the types of inputs `a` and `b`. If non-numeric values are passed, it will lead to a TypeError. Adding checks to ensure `a` and `b` are numbers can make the function more robust.
+
+4. **Issue: Lack of Documentation**
+   - **Severity Level**: Low
+   - **Line Number and Content**: Line 1: `def xyz(a, b):`
+   - **Description**: The function lacks documentation. Adding a docstring that describes the function's behavior, parameters, and return value would improve code readability and maintainability.

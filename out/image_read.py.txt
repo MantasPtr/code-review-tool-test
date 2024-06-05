@@ -1,0 +1,32 @@
+1. **Security Issue: Path Traversal**
+   - **Severity Level**: High
+   - **Line Number and Content**: 
+     ```python
+     @app.route('/image/<filename>')
+     def get_image(filename):
+         file_path = os.path.join(IMAGE_DIRECTORY, filename)
+     ```
+   - **Description**: The function `get_image` does not validate or sanitize the `filename` parameter. This can lead to a path traversal attack where an attacker could access files outside the intended directory by using `../` in the filename.
+
+2. **Security Issue: Running Flask App in Debug Mode in Production**
+   - **Severity Level**: Medium
+   - **Line Number and Content**:
+     ```python
+     if __name__ == '__main__':
+         app.run(debug=True)
+     ```
+   - **Description**: Running the Flask application with `debug=True` in a production environment can expose sensitive information about the application, such as server configuration and error details, which can be exploited by attackers.
+
+3. **Code Style Issue: Exception Handling Broadness**
+   - **Severity Level**: Low
+   - **Line Number and Content**:
+     ```python
+     except Exception as e:
+         abort(500, description=str(e))
+     ```
+   - **Description**: Catching a general `Exception` is usually not recommended unless absolutely necessary, as it can make debugging harder by catching unexpected exceptions that might indicate a bug or a different problem that should be handled differently.
+
+To address these issues:
+- Validate or sanitize the `filename` input to prevent path traversal.
+- Avoid running the Flask application in debug mode in a production environment.
+- Consider catching more specific exceptions or handling unexpected exceptions differently.

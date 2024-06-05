@@ -1,0 +1,11 @@
+1. **Issue Description**: The function `add_underscores` does not correctly add underscores after each character in the input string. Instead, it only returns the last character of the input string followed by an underscore. This is because the assignment inside the loop overwrites `new_word` in each iteration, rather than appending to it.
+
+2. **Severity Level**: High
+
+3. **Line Number and Content**:
+   - Line 4: `new_word = char + "_"`
+
+To fix this issue, you should change line 4 to append each character followed by an underscore to `new_word`:
+```python
+new_word += char + "_"
+```

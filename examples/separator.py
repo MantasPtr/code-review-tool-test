@@ -1,4 +1,4 @@
-# Adds spaces bettween each letter in word
+# Adds spaces between each letter in word
 # example: hello -> "h e l l o"
 def add_letter_spacing(word):
     new_word = ""

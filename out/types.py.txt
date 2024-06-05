@@ -1,0 +1,14 @@
+1. **Issue: Type Error in Arithmetic Operations**
+   - **Description**: The variable `MAGIC_NUMBER` is defined as a string and is used in arithmetic operations (`/` and `+`). Python does not allow arithmetic operations directly on strings without explicit conversion to a numerical type.
+   - **Severity Level**: High
+   - **Line Number and Content**:
+     - Line 2: `half = MAGIC_NUMBER / 2`
+     - Line 3: `return half + 20`
+
+2. **Issue: Misleading Variable Name**
+   - **Description**: The variable name `MAGIC_NUMBER` suggests a constant value that should not change, typically represented by an integer or float, but it is assigned a string value. This can be misleading and cause confusion.
+   - **Severity Level**: Medium
+   - **Line Number and Content**:
+     - Line 2: `MAGIC_NUMBER = "42"`
+
+To resolve these issues, you should convert `MAGIC_NUMBER` to an integer or float before performing arithmetic operations, and ensure the variable name and its usage are consistent with its data type.

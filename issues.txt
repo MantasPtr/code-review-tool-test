@@ -1,6 +1,6 @@
-file: 
-    type:
-    issue_description:
+file: todos.py
+    type: security
+    issue_description: xss
 
 file: fib.py
     type: performance
@@ -10,7 +10,9 @@ file: correct_types.py
     type: typing
     issue_description: string divided by numbers
 
-func.py 
+file: func.py 
+    type: naming
+    issue_description: unclear variable naming
 
 file: separator.py
     type: logic 
